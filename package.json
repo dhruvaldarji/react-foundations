@@ -2,24 +2,50 @@
   "name": "react-foundations",
   "version": "1.0.0",
   "description": "A sample codebase for learning react foundations.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Dhruval Darji",
+  "license": "MIT",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dhruvaldarji/react-foundations.git"
   },
+  "bugs": {
+    "url": "https://github.com/dhruvaldarji/react-foundations/issues"
+  },
+  "homepage": "https://github.com/dhruvaldarji/react-foundations#readme",
   "keywords": [
     "react",
     "foundations",
     "learn",
     "intro"
   ],
-  "author": "Dhruval Darji",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dhruvaldarji/react-foundations/issues"
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "homepage": "https://github.com/dhruvaldarji/react-foundations#readme"
+  "engineStrict": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.2.2"
+  }
 }
